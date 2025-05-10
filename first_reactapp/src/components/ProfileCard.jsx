@@ -1,13 +1,24 @@
-import dora from '../assets/dora.jpg';
+import image from '../assets/myimage.jpg';
 
-function ProfileCard() {
+const ProfileCard = () => {
   return (
     <div>
-      <img src={dora} alt="프로필 이미지" width="150" />
-      <h3>이름</h3>
-      <p>안녕하세요! 저는 React에 흥미를 가진 개발자입니다.</p>
+      <img src={image} alt="프로필" style={{ width: '150px', borderRadius: '10%' }} />
+      <p>  이름 : 김다인 </p>
+      <p>  학번 : 2023111933 </p>
+      <p>  전공 : 정보통신공학과 </p>
+      <p>  네트워크와 코드의 유지 보수에 관심이 있습니다. </p>
     </div>
   );
 }
 
-export default ProfileCard;
+const StackCard = () => {
+  return (
+    <div>
+      <p>  기술 스택 : Spring, Node.js, React, MySQL, MongoDB </p>
+      <p>  사용 언어 : C, C++, Python, JAVA, JavaScript </p>
+    </div>
+  );
+}
+
+export { ProfileCard, StackCard };

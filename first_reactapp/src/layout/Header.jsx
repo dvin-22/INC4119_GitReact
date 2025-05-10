@@ -9,7 +9,8 @@ const Header = () => {
         <Link to="/">홈</Link>
         <Link to="/about">소개</Link>
         <Link to="/projects">프로젝트</Link>
-        <Link to="/contact">연락처</Link>
+        <Link to="/contact">문의</Link>
+        <Link to="/login">로그인</Link>
       </nav>
     </header>
   )
